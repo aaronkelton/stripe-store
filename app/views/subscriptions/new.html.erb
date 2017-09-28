@@ -1,6 +1,6 @@
 <h1>Subscriptions</h1>
 
-<form action="/your-charge-code" method="post" id="payment-form">
+<%= form_tag subscription_path, id: "payment-form" do %>
   <span class="payment-errors"></span>
 
   <div class="form-row">
@@ -27,4 +27,4 @@
   </div>
 
   <input type="submit" class="submit" value="Submit Payment">
-</form>
+<% end %>
